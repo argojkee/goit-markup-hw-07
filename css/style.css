@@ -550,8 +550,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
 .team-part{
     width: 264px;
-
-  
 }
 
 .team-part {
@@ -1311,15 +1309,17 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 }
 
 .doing-list {
+    
     margin-top: 72px;
     display: flex;
     gap: 24px;
     margin-bottom: 120px;
 }
 .doing-item {
-    margin: 0;
-    height: 300px;
     border: 1px solid #E7E9FC;
+}
+.doing-photo {
+    display: block;
 }
 /* Our team */
 
