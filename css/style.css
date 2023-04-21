@@ -913,6 +913,17 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     
 }
 
+
+/* Customers */
+.customers-list>.customers-list-item:nth-child(2n) {
+    padding-right: calc((100% - 24px - (191.6px * 2)) / 2);
+}
+    
+.customers-list>.customers-list-item:nth-child(2n + 1) {
+    padding-left: calc((100% - 24px - (191.6px * 2)) / 2);
+}
+
+}
     /* Footer */
 /* First part */
 .part-footer-first {
@@ -971,7 +982,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             
             margin-bottom: 48px;
         }
-    }
+    
 
 /* От 768 до 1157 */
     @media screen and (min-width: 768px) and (max-width: 1158px) {
