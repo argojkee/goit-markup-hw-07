@@ -24,15 +24,12 @@
     
                 <ul class="site-nav list">
                     <li class="site-nav-item"><a class="title-body-medium link site-nav-link"
-                            href="./index.html">Studio</a></li>
+                            href="./index.html">Studio</a>
+                    </li>
                     <li class="site-nav-item"><a class="title-body-medium link current site-nav-link"
                             href="./portfolio.html">Portfolio</a></li>
                     <li class="site-nav-item"><a class="title-body-medium link site-nav-link" href="">Contacts</a></li>
                 </ul>
-    
-                <svg width="32" height="22" class="icon-menu">
-                    <use href="./images/icon.svg#icon-menu"></use>
-                </svg>
     
             </nav>
     
@@ -40,12 +37,71 @@
                 <ul class="list adress">
                     <li class="adress-item"><a class="link title-body adress-item-link"
                             href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="adress-item"><a class="link title-body adress-item-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li class="adress-item"><a class="link title-body adress-item-link" href="tel:+110001111111">+11 (000)
+                            111-11-11</a></li>
                 </ul>
             </address>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="32" height="22" class="icon-menu">
+                    <use href="./images/icon.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button type="button" class="menu-toggle js-close-menu">
+                    <svg width="8" height="8" class="icon-close">
+                        <use href="./images/icon.svg#icon-close"></use>
+                    </svg>
+                </button>
     
+                <ul class="mobile-menu">
+                    <li> <a href="./index.html" class="link">Studio</a></li>
+                    <li> <a href="./portfolio.html" class="link">Porfolio</a></li>
+                    <li> <a href="" class="link contacts-link">Contacts</a></li>
+                </ul>
+    
+                <ul class="list mobile-adress-list">
+                    <li><a href="tel:+110001111111" class="link mobile-tel">+11 (000) 111-11-11</a> </li>
+                    <li><a href="mailto:info@devstudio.com" class="link mobile-mail">info@devstudio.com</a></li>
+                </ul>
+                <ul class="social-list list">
+                    <li class="social-icons">
+                        <a href="" class="social-link social-link-footer">
+                            <svg class="social-icon" width="24" height="24">
+                                <use href="./images/icon.svg#icon-inst"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="social-icons">
+                        <a href="" class="social-link social-link-footer">
+                            <svg class="social-icon" width="24" height="24">
+                                <use href="./images/icon.svg#icon-twt"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="social-icons">
+                        <a href="" class="social-link social-link-footer">
+                            <svg class="social-icon" width="24" height="24">
+                                <use href="./images/icon.svg#icon-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="social-icons">
+                        <a href="" class="social-link social-link-footer">
+                            <svg class="social-icon" width="24" height="24">
+                                <use href="./images/icon.svg#icon-lkd"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+    
+    
+    
+            </div>
         </div>
-    </header>   
+    </header>
     <!-- Main -->
     <main>
     <section class="portfolio-main">
@@ -266,6 +322,6 @@
     </footer>
 
     
-
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

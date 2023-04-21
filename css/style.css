@@ -746,6 +746,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     width: 165px;
     padding: 8px 24px;
     gap: 16px;
+    border: none;
 }
 
 
