@@ -1135,8 +1135,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
               
             }
 .footer-container {
-    padding-left: 92px;
-    padding-right: 92px;
+    padding-left: 108px;
+    padding-right: 108px;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
