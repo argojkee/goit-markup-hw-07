@@ -11,29 +11,94 @@
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
         <link rel="stylesheet" href="./css/style.css">
-    <title>Homework6</title>
+    <title>Homework7</title>
 </head>
 <body>
     <header class="header">
         <div class="container header-container">
-        <nav class="site-navigation">
-           
-                <a href="./index.html" class="logo link logo-web-header">web<span class="logo-studio-header">Studio</span></a>
-            
-            <ul class="site-nav list">
-                <li class="site-nav-item"><a class="title-body-medium link current site-nav-link" href="./index.html">Studio</a></li>
-                <li class="site-nav-item"><a class="title-body-medium link site-nav-link" href="./portfolio.html">Portfolio</a></li>
-                <li class="site-nav-item"><a class="title-body-medium link site-nav-link" href="">Contacts</a></li>
-            </ul>
-        </nav>
+            <nav class="site-navigation">
+    
+                <a href="./index.html" class="logo link logo-web-header">web<span
+                        class="logo-studio-header">Studio</span></a>
+    
+                <ul class="site-nav list">
+                    <li class="site-nav-item"><a class="title-body-medium link current site-nav-link" href="./index.html">Studio</a>
+                    </li>
+                    <li class="site-nav-item"><a class="title-body-medium link site-nav-link"
+                            href="./portfolio.html">Portfolio</a></li>
+                    <li class="site-nav-item"><a class="title-body-medium link site-nav-link" href="">Contacts</a></li>
+                </ul>
 
-        <address class="adress-container adress-main">
-            <ul class="list adress">
-                <li class="adress-item"><a class="link title-body" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="adress-item"><a class="link title-body" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
-    </div>
+            </nav>
+    
+            <address class="adress-container adress-main">
+                <ul class="list adress">
+                    <li class="adress-item"><a class="link title-body adress-item-link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="adress-item"><a class="link title-body adress-item-link" href="tel:+110001111111">+11 (000)
+                            111-11-11</a></li>
+                </ul>
+            </address>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="32" height="22" class="icon-menu">
+                        <use href="./images/icon.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button type="button" class="menu-toggle js-close-menu">
+                <svg width="8" height="8" class="icon-close">
+                    <use href="./images/icon.svg#icon-close"></use>
+                </svg>
+                </button>
+                
+                <ul class="mobile-menu">
+                    <li> <a href="./index.html" class="link">Studio</a></li>
+                    <li> <a href="./portfolio.html" class="link">Porfolio</a></li>
+                    <li> <a href="" class="link contacts-link">Contacts</a></li>
+                </ul>
+                
+                    <ul class="list mobile-adress-list">
+                        <li><a href="tel:+110001111111" class="link mobile-tel">+11 (000) 111-11-11</a> </li>
+                        <li><a href="mailto:info@devstudio.com" class="link mobile-mail">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="social-list list">
+                        <li class="social-icons">
+                            <a href="" class="social-link social-link-footer">
+                               <svg class="social-icon" width="24" height="24">
+                                    <use href="./images/icon.svg#icon-inst"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social-icons">
+                            <a href="" class="social-link social-link-footer">
+                                <svg class="social-icon" width="24" height="24">
+                                    <use href="./images/icon.svg#icon-twt"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social-icons">
+                            <a href="" class="social-link social-link-footer">
+                                <svg class="social-icon" width="24" height="24">
+                                    <use href="./images/icon.svg#icon-fb"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social-icons">
+                            <a href="" class="social-link social-link-footer">
+                                <svg class="social-icon" width="24" height="24">
+                                    <use href="./images/icon.svg#icon-lkd"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                
+                
+
+        </div>
+        </div>
     </header>
     <main>
         <section class="hero">
@@ -117,8 +182,8 @@
                         <use href="./images/icon.svg#icon-antenna" ></use>
                     </svg>
                     </div>
-                    <h3 class="title-med feature-title">Strategy</h3>
-                    <p class="feature-container-text title-body">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+                    <h3 class="title-big feature-title">Strategy</h3>
+                    <p class="feature-container-text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
                 </li>
 
                 <li class="feature-list-item icon-clock">
@@ -127,8 +192,8 @@
                         <use href="./images/icon.svg#icon-clock"></use>
                     </svg>
                     </div>
-                    <h3 class="title-med feature-title">Punctuality</h3>
-                    <p class="feature-container-text title-body">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                    <h3 class="title-big feature-title">Punctuality</h3>
+                    <p class="feature-container-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                 </li>
 
                 <li class="feature-list-item icon-diagram">
@@ -137,8 +202,8 @@
                         <use href="./images/icon.svg#icon-diagram"></use>
                     </svg>
                     </div>
-                    <h3 class="title-med feature-title">Diligence</h3>
-                    <p class="feature-container-text title-body">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+                    <h3 class="title-big feature-title">Diligence</h3>
+                    <p class="feature-container-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                 </li>
 
                 <li class="feature-list-item icon-astranaut">
@@ -147,8 +212,8 @@
                         <use href="./images/icon.svg#icon-astranaut"></use>
                     </svg>
                     </div>
-                    <h3 class="title-med feature-title">Technologies</h3>
-                    <p class="feature-container-text title-body">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                    <h3 class="title-big feature-title">Technologies</h3>
+                    <p class="feature-container-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                 </li>
             </ul>
             </div>
@@ -370,7 +435,7 @@
                 <ul class="customers-list list">
                     <li class="customers-list-item">
                         <a href="" class="customers-list-link">
-                        <svg width="104" height="56" class="logo-companys">
+                        <svg width="110" height="56" class="logo-companys">
                             <use href="./images/icon.svg#icon-company-one"></use>
                         </svg>
                     </a></li>
@@ -379,7 +444,7 @@
 
                     <li class="customers-list-item">
                         <a href="" class="customers-list-link">
-                            <svg width="104" height="56" class="logo-companys">
+                            <svg width="110" height="56" class="logo-companys">
                                 <use href="./images/icon.svg#icon-company-two"></use>
                             </svg>
                         </a>
@@ -387,7 +452,7 @@
 
                     <li class="customers-list-item">
                         <a href="" class="customers-list-link">
-                            <svg width="104" height="56" class="logo-companys">
+                            <svg width="110" height="56" class="logo-companys">
                                 <use href="./images/icon.svg#icon-company-three"></use>
                             </svg>
                         </a>
@@ -395,7 +460,7 @@
 
                     <li class="customers-list-item">
                         <a href="" class="customers-list-link">
-                            <svg width="104" height="56" class="logo-companys">
+                            <svg width="110" height="56" class="logo-companys">
                                 <use href="./images/icon.svg#icon-company-four"></use>
                             </svg>
                         </a>
@@ -403,7 +468,7 @@
 
                     <li class="customers-list-item">
                         <a href="" class="customers-list-link">
-                            <svg width="104" height="56" class="logo-companys">
+                            <svg width="110" height="56" class="logo-companys">
                                 <use href="./images/icon.svg#icon-company-five"></use>
                             </svg>
                         </a>
@@ -411,7 +476,7 @@
 
                     <li class="customers-list-item">
                         <a href="" class="customers-list-link">
-                            <svg width="104" height="56" class="logo-companys">
+                            <svg width="110" height="56" class="logo-companys">
                                 <use href="./images/icon.svg#icon-company-six"></use>
                             </svg>
                         </a>
@@ -431,7 +496,7 @@
             </div>
             
             <div class="footer-social-container">
-                <p class="title-body-medium social-text">Social media</p>
+                <h3 class="title-body-medium social-text">Social media</h3>
                 <ul class="list social-list social-list-footer">
 
                     <li class="social-icons">
@@ -470,7 +535,7 @@
             </div>
 
             <div class="subscribe-container">
-                <p class="subscribe-title">Subscribe</p>
+                <h3 class="subscribe-title">Subscribe</h3>
                 <form class="subscribe-form">
                     <label >
                         <input type="email" name="mail" placeholder="E-mail" class="footer-mail-input">
@@ -484,7 +549,7 @@
             </div>
         </div>
     </footer>
-
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/js-speaker-form.js"></script>
 <script src="./js/modal.js"></script>
 </body>
