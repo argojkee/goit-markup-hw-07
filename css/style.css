@@ -927,8 +927,14 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     /* Footer */
 /* First part */
 .part-footer-first {
-    margin-left: 80px;
-    margin-right: 80px;
+  width: 268px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.footer-text {
+    text-align: left;
 }
 
 /* Social list */
@@ -1158,6 +1164,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 text-align: start;
                 width: 264px;
                 margin-left: 0;
+                margin-right: 0;
                 
             }
 
@@ -1277,6 +1284,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 }
 .feature-icon-bg {
     background-color: #F4F4FD;
+    border-radius: 4px;
 }
 .feature-icons {
     display: inline-block;
@@ -1311,6 +1319,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 .doing-item {
     margin: 0;
     height: 300px;
+    border: 1px solid #E7E9FC;
 }
 /* Our team */
 
@@ -1327,6 +1336,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 /* Customers */
 .customers {
     margin-bottom: 120px;
+    margin-top: 120px;
 }
 .customers-list-item {
     display: block;
@@ -1423,13 +1433,26 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     align-items: center;
     background-color: rgba(231, 233,252, 0.1);
     padding: 0;
+    transition: background-color var(--timing-duration) var(--timing-animation);
     
     
 }
 
 .icon-close {
     fill: var(--previous-color-text);
+    transition: fill var(--timing-duration) var(--timing-animation);
 }
+
+.js-close-menu:hover .icon-close,
+.js-close-menu:focus .icon-close {
+    fill: white;
+}
+
+.menu-toggle.js-close-menu:hover,
+.menu-toggle.js-close-menu:focus {
+    background-color:  #404BBF;
+}
+
 .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -1466,6 +1489,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     line-height: 1.11;
     color: #4D5AE5;
 }
+
+
 
 .mobile-mail {
     display: block;
