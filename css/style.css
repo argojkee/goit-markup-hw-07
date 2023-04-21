@@ -1146,8 +1146,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
               
             }
 .footer-container {
-    padding-left: 108px;
-    padding-right: 108px;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -1159,6 +1157,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 display: inline-block;
                 text-align: start;
                 width: 264px;
+                margin-left: 0;
                 
             }
 
@@ -1170,6 +1169,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 display: inline-block;
                 width: 208px;
                 margin-right: 0;
+                margin-top: 0;
                
             }
 
@@ -1179,11 +1179,13 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
             .subscribe-container {
                 width: 453px;
+                margin: 0;
  
             }
 
             .footer-mail-input {
                 width: 264px;
+                margin-bottom: 0;
             }
 
             .subscribe-form {
@@ -1191,10 +1193,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 gap: 24px;
             }
 
-            .subscribe-button {
-                border: none;
-               
-            }
+           
 
 
 
@@ -1349,6 +1348,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 }
 .footer-container {
     gap: 0;
+}
+.part-footer-first {
+    margin-right: 0;
 }
 .footer-social-container {
     margin-left: 120px;
