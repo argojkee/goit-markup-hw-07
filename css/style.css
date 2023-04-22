@@ -1558,6 +1558,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     
 }
 
+.mobile-menu-contacts .social-list {
+    margin-top: 0;
+}
 .menu-container .social-list {
     justify-content: space-between;
 
