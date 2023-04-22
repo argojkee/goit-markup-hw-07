@@ -238,13 +238,10 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     visibility: visible;
     background: rgba(46, 47, 66, 0.4);
-
     transition: visibility var(--timing-duration) var(--timing-animation),
         opacity var(--timing-duration) var(--timing-animation);
 }
@@ -253,7 +250,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-
 }
 
 .modal-window {
@@ -264,13 +260,13 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1) rotateZ(1turn);
     transition: transform var(--timing-duration) var(--timing-animation);
-    min-width: 408px;
-    height: 584px;
     background-color: #FCFCFC;
+    padding: 72px 16px 24px 16px;
+    min-width: 320px;
+    min-height: 586px;
 }
 
 .modal-text {
-    margin-top: 72px;
     text-align: center;
     font-family: 'Roboto';
     font-weight: 500;
@@ -279,18 +275,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     letter-spacing: 0.02em;
 }
 
-
-
-
-
-
-
-
 .backdrop.is-hidden .modal-window {
     transform: translate(-50%, -50%) scale(0);
-
 }
-
 
 .modal-window-button {
     position: absolute;
@@ -306,51 +293,48 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color var(--timing-duration) var(--timing-animation);
-
-
-
 }
 
 .modal-window-button:hover .modal-window-icon {
-
     fill: #FFFFFF;
-
 }
 
 .modal-window-button:hover {
-
     background-color: #404BBF;
 }
 
 .modal-window-button:active {
-
     background-color: #404BBF;
 }
 
-
-
 .modal-window-icon {
     transition: fill var(--timing-duration) var(--timing-animation);
-
 }
 
 .modal-window-icon {
     fill: #2E2F42;
-
 }
 
 .modal-window-button:active .modal-window-icon {
     fill: #FFFFFF;
-    ;
 }
 
 /* Form */
 
 .form-container {
-    width: 360px;
     margin-top: 16px;
-    margin-left: auto;
-    margin-right: auto;
+
+}
+
+.form-container .form-part-text {
+    margin-top: 4px;
+    padding-left: 24px;
+        font-weight: 400;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
+            padding-top: 8px;
+            padding-bottom: 8px;
 }
 
 .form-part {
@@ -358,15 +342,14 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     display: flex;
     flex-direction: column;
     text-align: start;
-    margin-bottom: 8px;
+    padding-top: 8px;
 }
 
-.form-part-comment {
-    margin-bottom: 0;
+.form-part-name {
+    padding-top: 0;
 }
 
 .form-part-title {
-    margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -374,10 +357,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     color: #8E8F99;
 }
 
+
+
 .form-part-text {
-    padding-left: 34px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     background-color: #FCFCFC;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -395,15 +377,18 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
 .comment-text {
     background-color: #FCFCFC;
-    width: 360px;
-    height: 120px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+    transition: border var(--timing-duration) var(--timing-animation);
     padding-inline-start: 16px;
     padding-inline-end: 16px;
     padding-block-end: 8px;
     padding-block-start: 8px;
-    transition: border var(--timing-duration) var(--timing-animation);
+        font-weight: 400;
+            font-size: 12px;
+            line-height: 1.17;
+            margin-top: 4px;
+            height: 120px;
 }
 
 .comment-text::placeholder {
@@ -421,10 +406,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
 .policy-container {
     text-align: left;
-    width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
+    margin-top: 18px;
 }
 
 
@@ -438,7 +420,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
-    margin-top: 16px;
 }
 
 
@@ -447,6 +428,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+        width: 16px;
+            height: 16px;
 }
 
 .checkbox:checked+.accept-icon {
@@ -457,15 +440,14 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
 .form-icon {
     position: absolute;
-    top: 27px;
-    left: 16px;
+    bottom: 4px;
+    left: 6px;
     fill: #2E2F42;
     transition: fill var(--timing-duration) var(--timing-animation);
 
 }
 
 .accept-icon {
-
 
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
@@ -488,14 +470,14 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 }
 
 .modal-button {
-    width: 169px;
     border: 1px solid #4D5AE5;
     border-radius: 4px;
     background-color: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: white;
-    margin-bottom: 24px;
     padding: 15px 32px;
+    margin-top: 24px;
+    width: 169px;
 }
 
 .modal-button-text {
@@ -628,8 +610,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
 
 .customers {
-    margin-top: 96px;
-    margin-bottom: 96px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     text-align: center;
    
 }
@@ -851,7 +833,12 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
 
 
-
+/* After 428 */
+@media screen and (min-width: 428px) {
+    .form-container {
+        width: 392px;
+    }
+}
 
 
 /* Vision before 767px */
@@ -877,15 +864,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 }
     
 /* Hero */
-.modal-window {
-    
-    min-width: 392px;
-}
 
-.form-container {
-    margin-left: 16px;
-    margin-right: 16px;
-}
+
+
 /* Footer */
 .footer-mail-input {
     width: 100%;
@@ -1341,6 +1322,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 .doing {
     display: block;
     text-align: center;
+    padding-bottom: 120px;
 }
 
 .title-doing {
@@ -1355,7 +1337,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     margin-top: 72px;
     display: flex;
     gap: 24px;
-    margin-bottom: 120px;
 }
 .doing-item {
     border: 1px solid #E7E9FC;
@@ -1377,8 +1358,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
 /* Customers */
 .customers {
-    margin-bottom: 120px;
-    margin-top: 120px;
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
 .customers-list-item {
     display: block;
