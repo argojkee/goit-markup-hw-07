@@ -168,6 +168,12 @@ nav {
     stroke: var(--previous-color-text);
 }
 
+.site-nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--previous-color-text);
+}
 
 /* Adress */
 
@@ -499,13 +505,16 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     letter-spacing: 0.04em;
 }
 /* Features */
+.section-feature {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 
 .feature-list {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-top: 96px;
     text-align: center;
 }
 
@@ -516,9 +525,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
 
 /* Features */
-.section-feature {
-    padding-bottom: 96px;
-}
+
 
 
 .feature-container-text {
@@ -607,6 +614,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
 .team-profession {
     margin-top: 8px;
+    font-weight: 400;
 }
 
 .social-list {
@@ -707,6 +715,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 /* Subscribe */
 .subscribe-title {
     margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 
@@ -844,7 +855,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
 
 /* Vision before 767px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     
     /* General */
 
@@ -886,7 +897,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 }
 /* Hero */
 .hero-title {
-    width: 320px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -894,7 +905,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
 /* Features */
    
-
+    .feature-list-item {
+        max-width: 396px;
+    }
     .feature-list-item:not(:last-child) {
         margin-bottom: 72px;
     }
@@ -905,6 +918,11 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
     
 /* Our-team */
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+}
 .team-part  {
  margin-left: auto;
  margin-right: auto;
@@ -925,7 +943,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     /* Footer */
 /* First part */
 .part-footer-first {
-  width: 268px;
+  max-width: 268px;
   margin-left: auto;
   margin-right: auto;
   
@@ -957,7 +975,10 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             margin-right: auto;
         }
 
-
+/* Subscribe */
+.footer-mail-input {
+    max-width: 398px;
+}
 
         /* Portfolio */
         .portfolio-main {
@@ -989,7 +1010,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     
 
 /* От 768 до 1157 */
-    @media screen and (min-width: 768px) and (max-width: 1158px) {
+    @media screen and (min-width: 768px) and (max-width: 1157px) {
 
 
         .container {
@@ -1028,12 +1049,18 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         gap: 12px;
     
      }
+       /* Features */
        
-     
+     /* Footer */
+     .footer-container {
+        padding-left: 108px;
+        padding-right: 108px;
 
+     }
        /* Portfolio */
         .portfolio-main {
             padding-bottom: 96px;
+            
         }
 
 
@@ -1141,13 +1168,18 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         .customers-list {
             gap: 72px 24px;
         }
-    
+        
+        .customers-list-link {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        .logo-companys {
+            width: 104px;
+        }
             /* Footer */
 
             .footer {
-               
         text-align: start;
-              
             }
 .footer-container {
     display: flex;
@@ -1264,11 +1296,17 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 .site-nav-link {
     padding-top: 24px;
     padding-bottom: 24px;
+
 }
            /* Adress */
     .adress {
     gap: 40px;
         }
+
+    .adress-item-link {
+        font-size: 16px;
+        line-height: 1.5;
+    }
 /* Hero */
 .hero {
     padding-top: 188px;
@@ -1277,9 +1315,11 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
 /* Feauters */
 
-.feature-list {
-    margin-top: 120px;
+.section-feature {
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
+
 .feature-icon-bg {
     background-color: #F4F4FD;
     border-radius: 4px;
@@ -1290,6 +1330,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 }
 .feature-title {
     margin-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
 }
 .feature-list-item {
     width: 264px;
@@ -1297,7 +1340,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 /* What are we doing */
 .doing {
     display: block;
-    margin-top: 120px;
     text-align: center;
 }
 
@@ -1398,11 +1440,14 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
 .menu-container {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding-left: 40px;
+    padding: 80px 35px 40px 40px;
     z-index: 999;
     background-color: white;
     transform: translateX(100%);
@@ -1458,7 +1503,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     flex-direction: column;
     gap: 40px;
     padding: 0;
-    margin-top: 80px;
+    
     list-style: none;
 }
 
@@ -1478,16 +1523,28 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     color: #404BBF;
 }
 
+
+.mobile-menu-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
 .mobile-adress-list {
-    margin-top: 284px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 
 }
 
 .mobile-tel {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 1.11;
     color: #4D5AE5;
+
+@media screen and (min-width: 420px){
+    font-size: 36px;
+}
 }
 
 
@@ -1498,15 +1555,12 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     font-size: 20px;
     line-height: 1.2;
     color: var(--second-color-text);
-    margin-top: 40px;
     
 }
 
 .menu-container .social-list {
     justify-content: space-between;
-    margin-top: 48px;
-    margin-bottom: 40px;
-    margin-right: 60px;
+
 }
      
 
