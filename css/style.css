@@ -192,16 +192,77 @@ nav {
 
 
 .hero {
-background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url('../images/image-name.jpg');
-    background-size: cover;
-    background-position: center;
     text-align: center;
     padding-top: 112px;
     padding-bottom: 112px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--previous-color-text);
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url('../images/mobile-396-280-1px/hero-mobile-428x432-1px.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
+/* Screen 2px - before 768px */
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px){
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), 
+                url('../images/mobile-396-280-2px/hero-mobile-428x432-2px.jpg');
+    }
+}
+
+
+/* Tablet hero image */
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url('../images/tablet-356-300-1px/hero-tablet-768x436-1px.jpg');
+    }
+}
+
+/* Tablet hero image 2px */
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .banner {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url('../images/tablet-356-300-2px/hero-tablet-768x436-2px.jpg');
+    }
+}
+
+
+/* Desktop hero image */
+
+@media screen and (min-width: 1158px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url('../images/desktop-360-300-1px/hero-desktop-1440x600-1px.jpg');
+    }
+}
+
+/* Desktop hero image 2px */
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px){
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url('../images/desktop-360-300-2px/hero-desktop-1440x600-2px.jpg');
+    }
+}
+
 
 .hero-title {
     color: white;
@@ -902,13 +963,12 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 72px 24px;
+    justify-content: center;
+
 }
-.team-part  {
- margin-left: auto;
- margin-right: auto;
-    
-}
+
+
 
 
 /* Customers */
@@ -970,7 +1030,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         .filter-list {
             flex-wrap: wrap;
             padding-bottom: 48px;
-            width: 268px;
         }
       
 /* Content */
@@ -1413,6 +1472,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     margin-top: 72px;
     gap: 48px 24px;
 }
+ .overlay {
+     display: block;
+ }
 
 }
 
