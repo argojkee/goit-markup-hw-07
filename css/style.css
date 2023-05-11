@@ -864,15 +864,18 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px){
     
 }
 
-/* .content-list-item:hover { 
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-                0px 1px 1px rgba(46, 47, 66, 0.16),
-                0px 2px 1px rgba(46, 47, 66, 0.08);
-}*/
 
+
+.content-list-title {
+    color: var(--previous-color-text);
+}
+
+.content-list-item {
+    width: calc((100% - 48px) / 3);
+}
 
 .photo-link {
-    color: var(--previous-color-text);
+    display: block;
 }
 
 .photo-link:hover,
@@ -882,13 +885,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px){
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-
-
 .photo-link:hover .overlay,
 .photo-link:focus .overlay {
     transform: translateY(0);
-    
-    
 }
 
 .content-list {
