@@ -61,7 +61,7 @@ const cards = [
     urlDesktopx2: './images/desktop-360-300-2px/desktop-6-2.jpg 2x',
     urlTabletx1: './images/tablet-356-300-1px/tablet-6-1.jpg 1x',
     urlTabletx2: './images/tablet-356-300-2px/tablet-6-2.jpg 2x',
-    urlMobilex1: '/images/mobile-396-280-1px/mobile-6-1.jpg 1x',
+    urlMobilex1: './images/mobile-396-280-1px/mobile-6-1.jpg 1x',
     urlMobilex2: './images/mobile-396-280-2px/mobile-6-2.jpg 2x',
     content_title: 'Online Courses',
     content_text: 'Marketing',
