@@ -113,9 +113,9 @@ function onButtonClick(e) {
     return;
   }
 
-  const selectedCategory = e.target.textContent;
+  const selectedCategory = e.target.dataset.action;
 
-  if (selectedCategory === 'All') {
+  if (selectedCategory === 'all') {
     onBtnAllClick();
   } else {
     removeIsactive(buttons[0]);
@@ -143,7 +143,7 @@ function onButtonClick(e) {
 
       let markupString = '';
       for (const button of activeButtons) {
-        markupString += makeFilteredMarkup(cards, button.textContent);
+        markupString += makeFilteredMarkup(cards, button.dataset.action);
       }
 
       addElementsInUi(markupString);
@@ -164,8 +164,9 @@ function makeMarkup(array) {
       alt,
       content_title,
       content_text,
+      data_category,
     }) => {
-      makeMarkupString += ` <li class="content-list-item">
+      makeMarkupString += ` <li class="content-list-item" data-info=${data_category}>
                 <a class="link photo-link" href=""><div class="parrent">
                     <picture>
                         <source srcset="${urlDesktopx1}, ${urlDesktopx2}"
@@ -202,9 +203,7 @@ function addElementsInUi(string) {
 }
 
 function makeFilteredMarkup(array, category) {
-  const filteredMarkup = array.filter(
-    element => element.content_text === category
-  );
+  const filteredMarkup = array.filter(element => element.data === category);
   return makeMarkup(filteredMarkup);
 }
 

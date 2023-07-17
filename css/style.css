@@ -835,23 +835,17 @@ background-color: #31D0AA;
     box-sizing: content-box;
 }
 
-/* .filter-button:hover,
-.filter-button:focus {
+ .filter-button:hover {
     background-color: #404BBF;
     color: white;
-} */
+} 
 
 .filter-button.is-active {
         background-color: #404BBF;
             color: white;
 }
 
-/* .filter-button.is-active:hover,
-.filter-button.is-active:focus {
-    background-color: #F4F4FD;
-    color: #4D5AE5;
-    border: 1px solid #E7E9FC;
-} */
+
 /* Content */
 
 

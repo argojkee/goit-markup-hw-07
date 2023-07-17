@@ -8,6 +8,7 @@ const cards = [
     urlMobilex2: './images/mobile-396-280-2px/mobile-1-2.jpg 2x',
     content_title: 'Banking App Interface Concept',
     content_text: 'App',
+    data: 'app',
     alt: 'application',
   },
 
@@ -20,6 +21,7 @@ const cards = [
     urlMobilex2: './images/mobile-396-280-2px/mobile-2-2.jpg 2x',
     content_title: 'Cashless Payment',
     content_text: 'Marketing',
+    data_category: 'marketing',
     alt: 'telephone',
   },
 
@@ -32,6 +34,7 @@ const cards = [
     urlMobilex2: './images/mobile-396-280-2px/mobile-3-2.jpg 2x',
     content_title: 'Meditation App',
     content_text: 'App',
+    data: 'app',
     alt: 'monitor',
   },
   {
@@ -43,6 +46,7 @@ const cards = [
     urlMobilex2: './images/mobile-396-280-2px/mobile-4-2.jpg 2x',
     content_title: 'Taxi Service',
     content_text: 'Marketing',
+    data: 'marketing',
     alt: 'car',
   },
   {
@@ -54,6 +58,7 @@ const cards = [
     urlMobilex2: './images/mobile-396-280-2px/mobile-5-2.jpg 2x',
     content_title: 'Screen Illustrationst',
     content_text: 'Design',
+    data: 'design',
     alt: 'telephone screen',
   },
   {
@@ -65,6 +70,7 @@ const cards = [
     urlMobilex2: './images/mobile-396-280-2px/mobile-6-2.jpg 2x',
     content_title: 'Online Courses',
     content_text: 'Marketing',
+    data: 'marketing',
     alt: 'woomen',
   },
   {
@@ -76,6 +82,7 @@ const cards = [
     urlMobilex2: './images/mobile-396-280-2px/mobile-7-2.jpg 2x',
     content_title: 'Instagram Stories Concept',
     content_text: 'Design',
+    data: 'design',
     alt: 'Instagramm content',
   },
   {
@@ -87,6 +94,7 @@ const cards = [
     urlMobilex2: './images/mobile-396-280-2px/mobile-8-2.jpg 2x',
     content_title: 'Organic Food',
     content_text: 'Web Site',
+    data: 'web-site',
     alt: 'food',
   },
   {
@@ -98,6 +106,7 @@ const cards = [
     urlMobilex2: './images/mobile-396-280-2px/mobile-9-2.jpg 2x',
     content_title: 'Fresh Coffee',
     content_text: 'Web Site',
+    data: 'web-site',
     alt: 'coffee',
   },
 ];
