@@ -1,106 +1,4 @@
-const cards = [
-  {
-    urlDesktopx1: './images/desktop-360-300-1px/desktop-1-1.jpg 1x',
-    urlDesktopx2: './images/desktop-360-300-2px/desktop-1-2.jpg 2x',
-    urlTabletx1: './images/tablet-356-300-1px/tablet-1-1.jpg 1x',
-    urlTabletx2: './images/tablet-356-300-2px/tablet-1-2.jpg 2x',
-    urlMobilex1: './images/mobile-396-280-1px/mobile-1-1.jpg 1x',
-    urlMobilex2: './images/mobile-396-280-2px/mobile-1-2.jpg 2x',
-    content_title: 'Banking App Interface Concept',
-    content_text: 'App',
-    alt: 'application',
-  },
-
-  {
-    urlDesktopx1: './images/desktop-360-300-1px/desktop-2-1.jpg 1x',
-    urlDesktopx2: './images/desktop-360-300-2px/desktop-2-2.jpg 2x',
-    urlTabletx1: './images/tablet-356-300-1px/tablet-2-1.jpg 1x',
-    urlTabletx2: './images/tablet-356-300-2px/tablet-2-2.jpg 2x',
-    urlMobilex1: './images/mobile-396-280-1px/mobile-2-1.jpg 1x',
-    urlMobilex2: './images/mobile-396-280-2px/mobile-2-2.jpg 2x',
-    content_title: 'Cashless Payment',
-    content_text: 'Marketing',
-    alt: 'telephone',
-  },
-
-  {
-    urlDesktopx1: './images/desktop-360-300-1px/desktop-3-1.jpg 1x',
-    urlDesktopx2: './images/desktop-360-300-2px/desktop-3-2.jpg 2x',
-    urlTabletx1: './images/tablet-356-300-1px/tablet-3-1.jpg 1x',
-    urlTabletx2: './images/tablet-356-300-2px/tablet-3-2.jpg 2x',
-    urlMobilex1: './images/mobile-396-280-1px/mobile-3-1.jpg 1x',
-    urlMobilex2: './images/mobile-396-280-2px/mobile-3-2.jpg 2x',
-    content_title: 'Meditation App',
-    content_text: 'App',
-    alt: 'monitor',
-  },
-  {
-    urlDesktopx1: './images/desktop-360-300-1px/desktop-4-1.jpg 1x',
-    urlDesktopx2: './images/desktop-360-300-2px/desktop-4-2.jpg 2x',
-    urlTabletx1: './images/tablet-356-300-1px/tablet-4-1.jpg 1x',
-    urlTabletx2: './images/tablet-356-300-2px/tablet-4-2.jpg 2x',
-    urlMobilex1: './images/mobile-396-280-1px/mobile-4-1.jpg 1x',
-    urlMobilex2: './images/mobile-396-280-2px/mobile-4-2.jpg 2x',
-    content_title: 'Taxi Service',
-    content_text: 'Marketing',
-    alt: 'car',
-  },
-  {
-    urlDesktopx1: './images/desktop-360-300-1px/desktop-5-1.jpg 1x',
-    urlDesktopx2: './images/desktop-360-300-2px/desktop-5-2.jpg 2x',
-    urlTabletx1: './images/tablet-356-300-1px/tablet-5-1.jpg 1x',
-    urlTabletx2: './images/tablet-356-300-2px/tablet-5-2.jpg 2x',
-    urlMobilex1: './images/mobile-396-280-1px/mobile-5-1.jpg 1x',
-    urlMobilex2: './images/mobile-396-280-2px/mobile-5-2.jpg 2x',
-    content_title: 'Screen Illustrationst',
-    content_text: 'Design',
-    alt: 'telephone screen',
-  },
-  {
-    urlDesktopx1: './images/desktop-360-300-1px/desktop-6-1.jpg 1x',
-    urlDesktopx2: './images/desktop-360-300-2px/desktop-6-2.jpg 2x',
-    urlTabletx1: './images/tablet-356-300-1px/tablet-6-1.jpg 1x',
-    urlTabletx2: './images/tablet-356-300-2px/tablet-6-2.jpg 2x',
-    urlMobilex1: './images/mobile-396-280-1px/mobile-6-1.jpg 1x',
-    urlMobilex2: './images/mobile-396-280-2px/mobile-6-2.jpg 2x',
-    content_title: 'Online Courses',
-    content_text: 'Marketing',
-    alt: 'woomen',
-  },
-  {
-    urlDesktopx1: './images/desktop-360-300-1px/desktop-7-1.jpg 1x',
-    urlDesktopx2: './images/desktop-360-300-2px/desktop-7-2.jpg 2x',
-    urlTabletx1: './images/tablet-356-300-1px/tablet-7-1.jpg 1x',
-    urlTabletx2: './images/tablet-356-300-2px/tablet-7-2.jpg 2x',
-    urlMobilex1: './images/mobile-396-280-1px/mobile-7-1.jpg 1x',
-    urlMobilex2: './images/mobile-396-280-2px/mobile-7-2.jpg 2x',
-    content_title: 'Instagram Stories Concept',
-    content_text: 'Design',
-    alt: 'Instagramm content',
-  },
-  {
-    urlDesktopx1: './images/desktop-360-300-1px/desktop-8-1.jpg 1x',
-    urlDesktopx2: './images/desktop-360-300-2px/desktop-8-2.jpg 2x',
-    urlTabletx1: './images/tablet-356-300-1px/tablet-8-1.jpg 1x',
-    urlTabletx2: './images/tablet-356-300-2px/tablet-8-2.jpg 2x',
-    urlMobilex1: './images/mobile-396-280-1px/mobile-8-1.jpg 1x',
-    urlMobilex2: './images/mobile-396-280-2px/mobile-8-2.jpg 2x',
-    content_title: 'Organic Food',
-    content_text: 'Web Site',
-    alt: 'food',
-  },
-  {
-    urlDesktopx1: './images/desktop-360-300-1px/desktop-9-1.jpg 1x',
-    urlDesktopx2: './images/desktop-360-300-2px/desktop-9-2.jpg 2x',
-    urlTabletx1: './images/tablet-356-300-1px/tablet-9-1.jpg 1x',
-    urlTabletx2: './images/tablet-356-300-2px/tablet-9-2.jpg 2x',
-    urlMobilex1: './images/mobile-396-280-1px/mobile-9-1.jpg 1x',
-    urlMobilex2: './images/mobile-396-280-2px/mobile-9-2.jpg 2x',
-    content_title: 'Fresh Coffee',
-    content_text: 'Web Site',
-    alt: 'coffee',
-  },
-];
+import cards from './data-cards.js';
 
 const btnContainerEl = document.querySelector('.js-filter-list');
 const cardsListEl = document.querySelector('.js-content-list');
@@ -289,7 +187,7 @@ function makeMarkup(array) {
                             media="(min-width: 320px)">
 
                         <img src="./images/desktop-360-300-1px/desktop-9-1.jpg" alt="${alt}" width="360" height="300"
-                            class="photo-content">
+                            class="photo-content" loading="lazy">
                     </picture>
 
                     <div class="overlay">
