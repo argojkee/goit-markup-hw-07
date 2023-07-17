@@ -116,11 +116,7 @@ function onButtonClick(e) {
   const selectedCategory = e.target.textContent;
 
   if (selectedCategory === 'All') {
-    removeAllIsactive();
-
-    addIsactive(e.target);
-
-    addAllElementsInUi();
+    onBtnAllClick();
   } else {
     removeIsactive(buttons[0]);
     e.target.classList.toggle('is-active');
@@ -136,12 +132,7 @@ function onButtonClick(e) {
     }
 
     if (!isAnyActive || countSelected === buttons.length - 1) {
-      if (countSelected === buttons.length - 1) {
-        removeAllIsactive();
-      }
-      addIsactive(buttons[0]);
-
-      addAllElementsInUi();
+      onBtnAllClick();
     } else {
       const activeButtons = [];
       for (const button of buttons) {
@@ -237,4 +228,12 @@ function addAllElementsInUi() {
   const markupString = makeMarkup(cards);
 
   addElementsInUi(markupString);
+}
+
+function onBtnAllClick() {
+  removeAllIsactive();
+
+  addIsactive(buttons[0]);
+
+  addAllElementsInUi();
 }
