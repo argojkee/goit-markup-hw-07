@@ -831,12 +831,23 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px){
     box-sizing: content-box;
 }
 
-.filter-button:hover,
+/* .filter-button:hover,
 .filter-button:focus {
     background-color: #404BBF;
     color: white;
+} */
+
+.filter-button.is-active {
+        background-color: #404BBF;
+            color: white;
 }
 
+/* .filter-button.is-active:hover,
+.filter-button.is-active:focus {
+    background-color: #F4F4FD;
+    color: #4D5AE5;
+    border: 1px solid #E7E9FC;
+} */
 /* Content */
 
 
