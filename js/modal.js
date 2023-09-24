@@ -7,6 +7,11 @@ const refs = {
 
 (() => {
   refs.openModalBtn.addEventListener('click', () => {
+    let paddingOffSet = window.innerWidth - document.body.offsetWidth + 'px';
+
+    refs.bodyEl.style.paddingRight = paddingOffSet;
+    refs.bodyEl.style.overflow = 'hidden';
+
     refs.bodyEl.addEventListener('keydown', onEscPress);
     refs.bodyEl.addEventListener('click', onBackdropClick);
     toggleModal();
@@ -42,6 +47,9 @@ function onBackdropClick() {
 }
 
 function backdropRemoveEventListener() {
+  refs.bodyEl.style.overflow = 'auto';
+  refs.bodyEl.style.paddingRight = '0px';
+
   refs.bodyEl.removeEventListener('keydown', onEscPress);
   refs.bodyEl.removeEventListener('click', onBackdropClick);
 }
